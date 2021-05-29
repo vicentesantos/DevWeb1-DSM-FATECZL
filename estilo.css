@@ -1,0 +1,398 @@
+*{margin: 0; padding: 0;}
+body{
+    background:ivory;
+    font-size: 12pt;
+}
+#acess-menu{/*Barra de acessibilidade*/
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: crimson;
+}
+#atalhos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    list-style: none;
+    padding-left: 2%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#atalhos li{
+    display: inline;
+    padding-left: 2%;
+}
+#atalhos li a {
+    color: #fff;
+}
+#atalhos li a:hover{
+	color: #2428F3;
+}
+#pg-acess{
+    margin-left: 25%;
+}/*Fim barra de Acessibilidade*/
+#cabecalho{
+    width: 100%;
+    height: 150px;
+}
+#logo{
+    width: 200px;
+    height: auto;
+	padding: 10px 30px;
+}
+nav{ /*Barra de navegação*/
+    width: 100%;
+    height: auto;
+    background-color: crimson;
+    float: left;
+}
+/*Menu Responsivo*/
+label[for="bt-menu"]{
+    display: none;
+}
+#bt-menu{
+    display: none;
+}
+#menu{/*Menu*/ 
+    list-style: none;
+    background-color: crimson;
+    float: left;
+	padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu li{
+    position: relative;
+    float: left;
+}
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+}
+#menu li a:hover{
+    background-color: rgb(146, 22, 22);
+}
+/*Submenu*/
+#menu li ul{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: crimson;
+    display: none;
+}
+#menu li:hover ul, #menu li.over ul{
+    display: block;
+}
+#menu li ul li{
+    display: block;
+    width: 175px;
+}
+/*fim submenu*/
+#conteudo{
+    width: 100%;
+    height: auto;
+}
+#conteudo ul{ /*lista da página*/
+	padding-left: 50px;
+    list-style: none;
+}
+#conteudo ul a{
+    text-decoration: none;
+}
+#conteudo ul a:hover{
+    text-decoration: underline;
+}/*fim lista da página*/
+.breadcrumb{
+    padding-left: 2%;
+    padding-top: 42px;
+    list-style: none;
+}
+.breadcrumb li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: black;
+}
+.breadcrumb li a{
+    color: rgb(146, 22, 22);
+    text-decoration: none;
+}
+.breadcrumb li a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.breadcrumb li+li:before{
+    padding: 8px;
+    color: #000;
+    content: "/\00a0";/*\00a0 indica o acréscimo de espaço após a barra*/
+}
+section{
+	padding-left: 20px;
+}
+#titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36pt;
+    text-align: center;
+	padding-top: 2%;
+    padding-bottom: 2%;
+}
+.paragrafo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    text-align: justify;
+    padding: 5px 50px;
+    list-style: none;
+}
+#imagem{
+    width: 500px;
+    height: auto;
+    padding: 10px 50px;
+}
+audio{
+	padding: 10px 50px;
+}
+video{
+	width: 600px;
+	height: auto;
+	margin: 50px 0px 0px 50px;
+}
+iframe{
+	width: 400px;
+	height: 225px;
+	border: 0;
+	margin-left: 50px;
+	padding: 10px 0px;
+}
+input, select{/*Formulário*/
+    width: 50%;
+    height: auto;
+    background-color: white;
+    color: #000;
+    border-radius: 5%;
+    border: solid 1px #000;
+}
+label, legend{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+    font-size: 12pt;
+}
+fieldset{
+    width: 50%;
+    border: none;
+    border-top: solid 1px #000;
+    margin: 1% 5%;
+}
+input[type=submit]{
+    width: 10%;
+    height: auto;
+    background-color: #dcdcdc;
+    margin: 1% 5%;
+}
+input[type=reset]{
+    width: 10%;
+    height: auto;
+    background-color: #dcdcdc;
+}
+input[type=radio]{
+    width: 1%;
+    height: auto;
+    margin-left: 5%;
+}
+.required:after{
+    content:"*";
+    color: red;
+}/*Fim Formulário*/
+#rodape{
+    width: 100%;
+    height: 106px;
+    background-color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #fff;
+    text-align: center;
+    margin-top:150px;
+    padding-top: 15px;
+}
+/*responsividade*/
+@media screen and (max-width: 1300px) {
+    #pg-acess{
+        margin-left: 10%;
+    }    
+}
+@media screen and (max-width: 1180px) {  
+    #pg-acess{
+        margin-left: 0;
+    }
+    #atalhos{
+        font-size: 9pt;
+        padding-left: 0;
+    }
+    #atalhos li{
+        padding-left: 3px;
+    }
+}
+@media screen and (max-width:800px) {
+    .atalhos{
+        display: none;
+    }
+    .fonte{
+        display: none;
+    }
+    #menu{
+        display: none;
+    }
+    label[for="bt-menu"]{
+        display: block;
+    }
+    #bt-menu:checked ~ #menu{
+        display: block;
+    }
+    #menu{
+        margin-left: 0;
+    }
+    #menu li{
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+    #menu li ul{
+        position: static;
+        width: 100%;
+        float: left;
+    }
+    menu li ul li{
+        position: relative;
+        width: 100%;
+        float: left;
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    section{
+        padding-left: 5px;
+    }
+    #conteudo{
+        width: 100%;
+        height: auto;
+    }
+    #conteudo ul{ /*lista da página*/
+        padding-left: 50px;
+        list-style: none;
+    }
+    #conteudo ul a{
+        text-decoration: none;
+    }
+    #conteudo ul a:hover{
+        text-decoration: underline;
+    }/*fim lista da página*/
+    .breadcrumb{
+        padding-left: 2%;
+        margin-top:3%;
+        list-style: none;
+    }
+    .breadcrumb li{
+        display: inline;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        color: black;
+    }
+    .breadcrumb li a{
+        color: rgb(146, 22, 22);
+        text-decoration: none;
+    }
+    .breadcrumb li a:hover{
+        color: #000;
+        text-decoration: underline;
+    }
+    .breadcrumb li+li:before{
+        padding: 8px;
+        color: #000;
+        content: "/\00a0";/*\00a0 indica o acréscimo de espaço após a barra*/
+    }
+    section{
+        padding-left: 10px;
+    }
+    #titulo{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16pt;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .paragrafo{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12pt;
+        text-align: justify;
+        padding: 5px 15px;
+        list-style: none;
+    }
+    #imagem{
+        width: 95%;
+        height: auto;
+        padding-left: 1%;
+    }
+    audio{
+
+        padding-top: 10px;
+        padding-left: 1%;
+    }
+    video{
+        width: 95%;
+        height: auto;
+        margin-left: 1%;
+    }
+    iframe{
+        width: 90%;
+        height: auto;
+        border: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 0px;
+    }
+}
+@media screen and (max-width: 380px){
+    input, select{/*Formulário*/
+        width: 90%;
+        height: auto;
+        background-color: white;
+        color: #000;
+        border-radius: 5%;
+        border: solid 1px #000;
+    }
+    label, legend{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #000;
+        font-size: 11pt;
+    }
+    fieldset{
+        width: 90%;
+        border: none;
+        border-top: solid 1px #000;
+        margin: 1% 5%;
+    }
+    input[type=submit]{
+        width: 30%;
+        height: auto;
+        background-color: #dcdcdc;
+        margin: 1% 5%;
+    }
+    input[type=reset]{
+        width: 30%;
+        height: auto;
+        background-color: #dcdcdc;
+    }
+    input[type=radio]{
+        width: 3%;
+        height: auto;
+        margin-left: 5%;
+    }
+    .required:after{
+        content:"*";
+        color: red;
+    }/*Fim Formulário*/
+    .breadcrumb{
+        padding-left: 1%;
+        padding-top: 17px;
+        list-style: none;
+    }
+}

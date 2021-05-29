@@ -1,0 +1,87 @@
+<!doctype HTML>
+<html lang="pt-br">
+    <head>
+        <title> Metadados </title>
+        <!-- metadados-->
+        <meta charset="utf-8">
+        <meta name="Description" content="Metadados">
+        <meta name="keywords" content="metadados, html, web">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+		<link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="acess-menu"><!--Acessibilidade-->
+            <ul id="atalhos">
+                <li><a class="atalhos" href="#conteudo" accesskey="1" title="Ir para o conteúdo">IR PARA O CONTEÚDO [1]</a></li>
+                <li><a class="atalhos" href="#menu" accesskey="2" title="Ir para o menu">IR PARA O MENU [2]</a></li>
+                <li><a class="atalhos" href="#rodape" accesskey="3" title="Ir para o roapé">IR PARA O RODAPÉ [3]</a></li>
+                <li><a id="pg-acess"href="acessibilidade.html" title="Página de Acessibilidade">ACESSIBILIDADE</a></li>
+                <li><a class="contraste" href="#" title="Contraste Preto">CONSTRASTE PRETO</a></li>
+                <li><a class="contraste" href="#" title="Sem contraste">SEM CONTRASTE</a></li>
+                <li><a class="fonte"href="#" title="Aumentar a fonte (Ctrl +)">A+</a></li>
+                <li ><a class="fonte" href="#" title="Diminuir a fonte (Ctrl -)">A-</a></li>
+            </ul>
+        </div>
+        <header id="cabecalho"><!--Cabeçalho-->
+            <a href="index.html"><img id="logo" src="imagem/FATEC_ZONA_LESTE.png" alt="Fatec Zona Leste"></a>
+            <nav><!--Navegador-->
+                <label for="bt-menu"><img src="imagem/menu.png" alt="menu"></label><!--Menu Sanduíche-->
+                <input type="checkbox" id="bt-menu">
+                <ul id="menu"><!--Lista não Odernada-->
+                    <li><a href="index.html">Início</a></li>
+					<li><a href="comentarios.html">Comentários</a></li>
+                    <li><a href="formulario.html">Formulários</a></li>
+                    <li><a href="layout.html">Elementos de Layout</a></li>
+                    <li><a href="metadados.html">Metadados</a></li>
+                    <li><a href="listas.html">Listas</a>
+                        <ul>
+                            <li><a href="ol.html">Lista Odernada</a></li>
+                            <li><a href="ul.html">Lista Não Odernada</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+		<main id="conteudo"><!--Conteúdo-->
+            <ul class="breadcrumb">
+                <li><a href="index.html">Início</a></li>
+                <li><b>Metadados</b></li><!--Nome da página que está aparecendo-->
+            </ul>
+			<section>
+				<conteudo>
+            		<h1 id="titulo">Metadados</h1>
+            		<p class="paragrafo">Metadados são dados externos à página que são usados ​​pelos navegadores (como exibir conteúdo), pelos mecanismos de pesquisa (palavras-chave) e outros serviços da web.</p>
+            		<p class="paragrafo">Eles são integrados à página HTML pela tag meta.</p>
+            		<p class="paragrafo">O elemento meta é usado para especificar qual conjunto de caracteres é usado, descrição da página, palavras-chave, autor e outros metadados.</p>
+            		<img id="imagem" src="imagem/metadados.png" alt="Metadados"><br>
+					<audio controls>
+						<source src="audios/metadados.mp3" type="audio/mp3">
+						Não foi possível reproduzir o áudio.
+					</audio><br>
+					<iframe  src="https://www.youtube.com/embed/-gwyAlV2riA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<p> Voltar para a página <a href="index.html"> inicial</a>.</p>
+				</conteudo>
+        	</section>
+		</main>
+        <div vw class="enabled"><!--VLibras-->
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+        <footer id="rodape">Todos os direitos reservados &copy; Vicente Santos Gonçalves, 2021.
+            <p><br>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="CSS válido!" />
+                </a>
+            </p>
+        </footer><!--Rodapé-->
+    </body>
+</html>
