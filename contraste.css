@@ -1,13 +1,20 @@
 *{margin: 0; padding: 0;}
 body{
-    background:ivory;
+    background:#000;
+    color: #fff;
     font-size: 12pt;
+}
+a{
+    color: #ffff00;
+}
+a:hover{
+    text-decoration: underline;
 }
 #acess-menu{/*Barra de acessibilidade*/
     width: 100%;
     height: auto;
     float: left;
-    background-color: crimson;
+    background-color: #000;
 }
 #atalhos{
     font-family: Arial, Helvetica, sans-serif;
@@ -22,10 +29,11 @@ body{
     padding-left: 2%;
 }
 #atalhos li a {
-    color: #fff;
+    color: #ffff00;
 }
 #atalhos li a:hover{
-	color: #2428F3;
+    color: yellow;
+	text-decoration: underline;
 }
 #pg-acess{
     margin-left: 25%;
@@ -38,11 +46,12 @@ body{
     width: 200px;
     height: auto;
 	padding: 10px 30px;
+    filter:grayscale();
 }
 nav{ /*Barra de navegação*/
     width: 100%;
     height: auto;
-    background-color: crimson;
+    background-color: #000;
     float: left;
 }
 /*Menu Responsivo*/
@@ -54,7 +63,7 @@ label[for="bt-menu"]{
 }
 #menu{/*Menu*/ 
     list-style: none;
-    background-color: crimson;
+    background-color: #000;
     float: left;
 	padding-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -64,20 +73,21 @@ label[for="bt-menu"]{
     float: left;
 }
 #menu li a{
-    color: #fff;
+    /*color: #ffff00;*/
     text-decoration: none;
     padding: 5px 20px;
     display: block;
 }
 #menu li a:hover{
-    background-color: rgb(146, 22, 22);
+    background-color: #fff;
+    color: #000;
 }
 /*Submenu*/
 #menu li ul{
     position: absolute;
     top: 25px;
     left: 0;
-    background-color: crimson;
+    background-color: #000;
     display: none;
 }
 #menu li:hover ul, #menu li.over ul{
@@ -111,19 +121,19 @@ label[for="bt-menu"]{
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
-    color: black;
+    color: #fff;
 }
 .breadcrumb li a{
-    color: rgb(146, 22, 22);
-    text-decoration: none;
+    color: yellow;
+    text-decoration: underline;
 }
 .breadcrumb li a:hover{
-    color: #000;
+    color: #ffff00;
     text-decoration: underline;
 }
 .breadcrumb li+li:before{
     padding: 8px;
-    color: #000;
+    color: #fff;
     content: "/\00a0";/*\00a0 indica o acréscimo de espaço após a barra*/
 }
 section{
@@ -146,6 +156,7 @@ section{
     width: 500px;
     height: auto;
     padding: 10px 50px;
+    filter: grayscale();
 }
 audio{
 	padding: 10px 50px;
@@ -165,31 +176,33 @@ iframe{
 input, select{/*Formulário*/
     width: 50%;
     height: auto;
-    background-color: white;
-    color: #000;
+    background-color: black;
+    color: #fff;
     border-radius: 5%;
-    border: solid 1px #000;
+    border: solid 1px #fff;
 }
 label, legend{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000;
+    color: #fff;
 }
 fieldset{
     width: 50%;
     border: none;
-    border-top: solid 1px #000;
+    border-top: solid 1px #fff;
     margin: 1% 5%;
 }
 input[type=submit]{
     width: 10%;
     height: auto;
-    background-color: #dcdcdc;
+    background-color: #000;
     margin: 1% 5%;
+    border: solid 1px #fff;
 }
 input[type=reset]{
     width: 10%;
     height: auto;
-    background-color: #dcdcdc;
+    background-color: #000;
+    border: solid 1px #fff;
 }
 input[type=radio]{
     width: 1%;
@@ -198,12 +211,12 @@ input[type=radio]{
 }
 .required:after{
     content:"*";
-    color: red;
+    color: #fff;
 }/*Fim Formulário*/
 #rodape{
     width: 100%;
     height: 106px;
-    background-color: crimson;
+    background-color: #000;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
     color: #fff;
@@ -292,20 +305,7 @@ input[type=radio]{
         display: inline;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 10pt;
-        color: black;
-    }
-    .breadcrumb li a{
-        color: rgb(146, 22, 22);
-        text-decoration: none;
-    }
-    .breadcrumb li a:hover{
-        color: #000;
-        text-decoration: underline;
-    }
-    .breadcrumb li+li:before{
-        padding: 8px;
-        color: #000;
-        content: "/\00a0";/*\00a0 indica o acréscimo de espaço após a barra*/
+        color: #fff;
     }
     section{
         padding-left: 10px;
@@ -351,32 +351,32 @@ input[type=radio]{
     input, select{/*Formulário*/
         width: 90%;
         height: auto;
-        background-color: white;
-        color: #000;
+        background-color: #000;
+        color: #fff;
         border-radius: 5%;
-        border: solid 1px #000;
+        border: solid 1px #fff;
     }
     label, legend{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #000;
+        color: #fff;
         font-size: 11pt;
     }
     fieldset{
         width: 90%;
         border: none;
-        border-top: solid 1px #000;
+        border-top: solid 1px #fff;
         margin: 1% 5%;
     }
     input[type=submit]{
         width: 30%;
         height: auto;
-        background-color: #dcdcdc;
+        background-color: #fff;
         margin: 1% 5%;
     }
     input[type=reset]{
         width: 30%;
         height: auto;
-        background-color: #dcdcdc;
+        background-color: #fff;
     }
     input[type=radio]{
         width: 3%;
@@ -385,7 +385,7 @@ input[type=radio]{
     }
     .required:after{
         content:"*";
-        color: red;
+        color: #fff
     }/*Fim Formulário*/
     .breadcrumb{
         padding-left: 1%;

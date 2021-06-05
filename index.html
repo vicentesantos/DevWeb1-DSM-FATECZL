@@ -10,6 +10,9 @@
         <!--Links do HML-->
         <link rel="stylesheet" href="estilo.css">
 		<link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="js/fonte.js"></script>
+        <script src="js/contraste.js"></script>
     </head>
     <body>
         <div id="acess-menu"><!--Acessibilidade-->
@@ -18,10 +21,10 @@
                 <li><a class="atalhos" href="#menu" accesskey="2" title="Ir para o menu">IR PARA O MENU [2]</a></li>
                 <li><a class="atalhos" href="#rodape" accesskey="3" title="Ir para o roapé">IR PARA O RODAPÉ [3]</a></li>
                 <li><a id="pg-acess"href="acessibilidade.html" title="Página de Acessibilidade">ACESSIBILIDADE</a></li>
-                <li><a class="contraste" href="#" title="Contraste Preto">CONSTRASTE PRETO</a></li>
-                <li><a class="contraste" href="#" title="Sem contraste">SEM CONTRASTE</a></li>
-                <li><a class="fonte"href="#" title="Aumentar a fonte (Ctrl +)">A+</a></li>
-                <li ><a class="fonte" href="#" title="Diminuir a fonte (Ctrl -)">A-</a></li>
+                <li><a class="contraste" href="javascript:void(0);" id="contraste" title="Contraste Preto">CONSTRASTE PRETO</a></li>
+                <li><a class="contraste" href="javascript:void(0);" id="semcontraste" title="Sem contraste">SEM CONTRASTE</a></li>
+                <li><a class="fonte"href="javascript:void(0);" id="aumenta"title="Aumentar a fonte (Ctrl +)">A+</a></li>
+                <li ><a class="fonte" href="javascript:void(0);" id="diminui" title="Diminuir a fonte (Ctrl -)">A-</a></li>
             </ul>
         </div>
         <header id="cabecalho"><!--Cabeçalho-->          
@@ -75,7 +78,7 @@
                 <div class="vw-plugin-top-wrapper"></div>
             </div>
         </div>
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <scriptsssss src="https://vlibras.gov.br/app/vlibras-plugin.js"></scriptsssss>
         <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>            
